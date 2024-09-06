@@ -15,11 +15,11 @@ pub struct FutureContract {
     // Checks if the underlying asset is SOL/SPL token
     pub exchange_asset_type: AssetType,
     // Amount of SOL being sold
-    pub sell_amount: f64,
+    pub sell_amount: u64,
     // Predetermined price at which the underlying asset will be bought when the futures contract reaches its expiration date
-    pub buy_amount: f64,
+    pub buy_amount: u64,
     // Margin collateral required. This will be percentage like 0.05 would be 5%
-    pub margin_collateral: f64,
+    pub margin_collateral: u64,
     // Start date (in seconds)
     pub start_date: u64,
     // Date of execution (in seconds)
